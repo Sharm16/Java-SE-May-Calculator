@@ -24,6 +24,6 @@ public class Calculator {
 
 	public double divide(double i, double j) {
 		Divide d = new Divide();
-		return d.divide(j, j);
+		return d.divide(i, j);
 	}
 }

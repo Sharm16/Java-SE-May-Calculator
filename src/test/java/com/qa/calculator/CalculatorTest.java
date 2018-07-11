@@ -30,6 +30,8 @@ public class CalculatorTest {
 		Assert.assertEquals(1.0, actualValue,0.001);
 		double actualValue2 = cal.divide(2, 0);
 		Assert.assertEquals(0.0, actualValue2,0.001);
+		double actualValue3 = cal.divide(-10, 5);
+		Assert.assertEquals(-2, actualValue3, 0.0001);
 	}
 
 	
