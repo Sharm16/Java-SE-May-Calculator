@@ -10,18 +10,27 @@ public class CalculatorTest {
 		Calculator cal= new Calculator();
 		int actualValue = cal.add(2, 2);
 		Assert.assertEquals(4, actualValue);
+		int actualValue2 = cal.add(2, -2);
+		Assert.assertEquals(0, actualValue2);
+	
 	}
 	@Test
 	public void subtracttest() {
 		Calculator cal= new Calculator();
 		int actualValue = cal.subtract(2, 2);
 		Assert.assertEquals(0, actualValue);
+		int actualValue2 = cal.subtract(2, -2);
+		Assert.assertEquals(4, actualValue2);
 	}
 	@Test
 	public void multiplytest() {
 		Calculator cal= new Calculator();
 		int actualValue = cal.multiply(2, 2);
 		Assert.assertEquals(4, actualValue);
+		int actualValue2 = cal.multiply(-2, 2);
+		Assert.assertEquals(-4, actualValue2);
+		int actualValue3 = cal.multiply(0, 2);
+		Assert.assertEquals(0, actualValue3);
 	}
 	@Test
 	public void dividetest() {

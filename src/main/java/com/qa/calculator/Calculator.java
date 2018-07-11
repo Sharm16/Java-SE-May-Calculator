@@ -9,17 +9,17 @@ public class Calculator {
 
 	public int add(int i, int j) {
 		Add a = new Add();
-		return a.add(j, j);
+		return a.add(i, j);
 	}
 
 	public int subtract(int i, int j) {
 		Subtract s = new Subtract();
-		return s.subtract(j, j);
+		return s.subtract(i, j);
 	}
 
 	public int multiply(int i, int j) {
 		Multiply m = new Multiply();
-		return m.multiply(j, j);
+		return m.multiply(i, j);
 	}
 
 	public double divide(double i, double j) {
