@@ -7,27 +7,29 @@ public class CalculatorTest {
 
 	@Test
 	public void addtest() {
-		Add a = new Add();
-		int actualValue = a.add(2, 2);
+		Calculator cal= new Calculator();
+		int actualValue = cal.add(2, 2);
 		Assert.assertEquals(4, actualValue);
 	}
 	@Test
 	public void subtracttest() {
-		Subtract s = new Subtract();
-		int actualValue = s.subtract(2, 2);
+		Calculator cal= new Calculator();
+		int actualValue = cal.subtract(2, 2);
 		Assert.assertEquals(0, actualValue);
 	}
 	@Test
 	public void multiplytest() {
-		Multiply m =new Multiply();
-		int actualValue = m.multiply(2, 2);
+		Calculator cal= new Calculator();
+		int actualValue = cal.multiply(2, 2);
 		Assert.assertEquals(4, actualValue);
 	}
 	@Test
 	public void dividetest() {
-		Divide d = new Divide();
-		int actualValue = d.divide(0, 2);
-		Assert.assertEquals(0, actualValue);
+		Calculator cal= new Calculator();
+		double actualValue = cal.divide(2, 2);
+		Assert.assertEquals(1.0, actualValue,0.001);
+		double actualValue2 = cal.divide(2, 0);
+		Assert.assertEquals(0.0, actualValue2,0.001);
 	}
 
 	
